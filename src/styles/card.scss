@@ -3,17 +3,26 @@
   background: #fff;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  transition: box-shadow 0.5s;
+  transition: box-shadow 1s;
 
   &:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
   }
 
   &__img {
-    width: 160px;
-    height: 134px;
-    margin: 0 5px ;
-    margin-bottom: 42px;
+    width: 170px;
+    height: 164px;
+    padding: 12px 2px;
+    border: 3px solid #fff;
+    margin-bottom: 27px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: #f3f3f3;
+    }
   }
 
   &__description {
@@ -48,7 +57,7 @@
     border-radius: 5px;
     border: 1px solid $main-color;
     color: #fff;
-    transition: background-color 0.1s;
+    transition: background-color 1s, color 1s;
 
     &:hover {
       background: #fff;
