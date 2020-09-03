@@ -16,9 +16,7 @@
     padding: 12px 2px;
     border: 3px solid #fff;
     margin-bottom: 27px;
-    transition-property: transform;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+    transition-property: transform 1s ease;
 
     &:hover {
       transform: scale(1.2);
