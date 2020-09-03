@@ -1,19 +1,14 @@
 .main {
-  display: flex;
+  display: grid;
+  grid-area: main;
   justify-content: center;
 
   &__container {
     width: 4 * $item-width + $gap * 3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  &__card {
-    margin-bottom: 51px;
-
-    &:nth-child(n + 5) {
-      margin-bottom: 0;
-    }
+    display: grid;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    row-gap: 51px;
+    column-gap: 48px;
   }
 }

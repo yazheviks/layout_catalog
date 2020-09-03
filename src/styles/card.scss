@@ -37,12 +37,17 @@
   &__review,
   &__pricing {
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    align-items: end;
+  }
+
+  &__reviews {
+    justify-self: end;
   }
 
   &__real-price {
+    justify-self: end;
     font-size: 16px;
     line-height: 19px;
     font-weight: 700;
