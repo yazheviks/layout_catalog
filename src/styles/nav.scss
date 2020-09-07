@@ -25,18 +25,18 @@
     &:hover {
       color: $main-color;
     }
-  }
-}
 
-.is-active {
-  color: $main-color;
+    &--is-active {
+      color: $main-color;
 
-  &::after {
-    content: "";
-    display: block;
-    position: relative;
-    height: 4px;
-    background: $main-color;
-    border-radius: 8px;
+      &::after {
+        content: "";
+        display: block;
+        position: relative;
+        height: 4px;
+        background: $main-color;
+        border-radius: 8px;
+      }
+    }
   }
 }
