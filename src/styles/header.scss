@@ -1,7 +1,7 @@
 .header {
-  display: grid;
+  display: flex;
   grid-area: header;
-  grid-template: 1fr / 50px auto auto 50px;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
