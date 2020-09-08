@@ -1,8 +1,13 @@
 .header {
-  @include flex-height;
+  display: grid;
+  grid-area: header;
+  grid-template: 1fr / 50px auto auto 50px;
+  align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
-  &__img {
-    display: block;
+  &__link {
+    display: inline-grid;
+    width: 40px;
+    grid-column: 2/3;
   }
 }
